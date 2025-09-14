@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # StudyPlanner
 The `StudyPlanner` class serves as the core model for the master study planner view page. It manages all planner logic, including adding and removing unit rows and semesters, calculating next semester intakes, and detecting unit conflicts. The class also handles backend-related calculations and state updates to ensure the planner remains accurate and up-to-date.
 
