@@ -105,6 +105,44 @@ MasterStudyPlannerDB.UpdateMasterStudyPlanner(planner)
 | `planner` | object  | The master study planner that was created (only present on success). Contains `ID`, `CourseIntakeID`, and `Status`. | `{"ID": 1, "CourseIntakeID": 3, "Status": "Complete"}`                         |
 
 ---
+### GetPlannerData
+
+Fetches planner data for a specific major and course intake from the server.
+
+```js
+static async GetPlannerData(planner_major_id, target_course_intake_id)
+```
+#### Parameters
+| Name                    | Type     | Description                             |
+| ----------------------- | -------- | --------------------------------------- |
+| planner_major_id        | `number` | The major ID for the planner.           |
+| target_course_intake_id | `number` | The course intake ID to fetch data for. |
+#### Returns
+| Type     | Description                                          |
+| -------- | ---------------------------------------------------- |
+| `Object` | `{ success, data }` or `{ success: false, message }` |
+
+---
+### GetAvailableIntakes
+
+Fetches available course intakes for a given major, course intake, and semester type.
+
+```js
+static async GetAvailableIntakes(planner_major_id, planner_course_intake_id, sem_type)
+```
+#### Parameters
+
+| Name                     | Type     | Description                                                                |
+| ------------------------ | -------- | -------------------------------------------------------------------------- |
+| planner_major_id         | `number` | The major ID for the planner.                                              |
+| planner_course_intake_id | `number` | The course intake ID to filter by.                                         |
+| sem_type                 | `string` | The semester type to filter by. ("Long Semester" or "Short Semester" only) |
+#### Returns
+| Type   | Description                                          |
+| ------ | ---------------------------------------------------- |
+| Object | `{ success, data }` or `{ success: false, message }` |
+
+---
 ## Example Usage
 
 ```js

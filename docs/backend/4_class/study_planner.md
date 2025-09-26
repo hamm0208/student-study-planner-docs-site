@@ -5,6 +5,8 @@ sidebar_position: 1
 # StudyPlanner
 The `StudyPlanner` class serves as the core model for the master study planner view page. It manages all planner logic, including adding and removing unit rows and semesters, calculating next semester intakes, and detecting unit conflicts. The class also handles backend-related calculations and state updates to ensure the planner remains accurate and up-to-date.
 
+TODO: Add in a note to talk about how the study planner has some rules it follows such as 1 year can only have 2 short semester and 2 long semester, there's only 4 intakes in 1 year, summer, s1, winter, s2
+
 ---
 ## Class Directory
 ```directory
@@ -47,20 +49,20 @@ this.units_state = {
 ---
 
 ## Getters & Setters
-| Name                 | Returns | Description                                                         |
-| -------------------- | ------- | ------------------------------------------------------------------- |
-| courseName           | `string`  | The name of the course.                                             |
-| courseCode           | `string`  | The code of the course.                                             |
-| status               | `string`  | The status of the planner.                                          |
-| intakeYear           | `number`  | The intake year.                                                    |
-| majorName            | `string`  | The name of the major.                                              |
-| creditsRequired      | `number`  | The required credits for the course.                                |
-| intakeName           | `string`  | The intake name.                                                    |
-| intakeMonth          | `string`  | The intake month.                                                   |
-| unit_types           | `Array`   | The array of unit types.                                            |
-| recommendedElectives | `Array`   | The array of recommended electives. (No functionality included yet) |
-| totalCredits         | `number`  | The total combined credits in the planner.                          |
-| allYears             | `Array`   | The years array.                                                    |
+| Name                 | Returns  | Description                                                         |
+| -------------------- | -------- | ------------------------------------------------------------------- |
+| courseName           | `string` | The name of the course.                                             |
+| courseCode           | `string` | The code of the course.                                             |
+| status               | `string` | The status of the planner.                                          |
+| intakeYear           | `number` | The intake year.                                                    |
+| majorName            | `string` | The name of the major.                                              |
+| creditsRequired      | `number` | The required credits for the course.                                |
+| intakeName           | `string` | The intake name.                                                    |
+| intakeMonth          | `string` | The intake month.                                                   |
+| unit_types           | `Array`  | The array of unit types.                                            |
+| recommendedElectives | `Array`  | The array of recommended electives. (No functionality included yet) |
+| totalCredits         | `number` | The total combined credits in the planner.                          |
+| allYears             | `Array`  | The years array.                                                    |
 
 ---
 ## Main Methods
@@ -652,6 +654,99 @@ RemoveAllUnusedUnitTypes()
 
 ---
 
+### ImportPlannerData
+
+Imports planner data from another course intake and rebuilds the current planner.
+
+```js
+async ImportPlannerData(target_course_intake_id)
+```
+
+#### Description
+
+- Fetches planner data for the specified course intake using `MasterStudyPlannerDB.GetPlannerData`.
+- Converts raw semester data into the correct format.
+- Fetches all units and unit types related to the imported planner.
+- Uses `BuildYearsFromData` to construct the planner's years, semesters, and units.
+- Removes all existing planner data.
+- Adds the imported data into the planner using `AddImportedDataIntoPlanner`.
+- Sets the total combined credits and unit types from the imported data.
+- Cleans the planner to remove empty semesters and updates the planner status.
+- Returns the updated planner instance.
+
+#### Parameters
+| Name                    | Type     | Description                          |
+| ----------------------- | -------- | ------------------------------------ |
+| target_course_intake_id | `number` | The course intake ID to import from. |
+
+
+#### Returns
+| Type     | Description                                      |
+| -------- | ------------------------------------------------ |
+| `Object` | The updated planner instance with imported data. |
+
+
+---
+
+### AddImportedDataIntoPlanner
+
+Adds years, semesters, and units from imported data into the planner.
+
+```js
+AddImportedDataIntoPlanner(years)
+```
+#### Description
+- Iterates through the provided years and their semesters.
+- Adds new years and semesters as needed.
+- For each unit in a semester, adds a new unit row and sets its data.
+- Ensures unit IDs and semester IDs are not duplicated.
+- Returns the updated planner instance.
+
+#### Parameters
+| Name  | Type    | Description                      |
+| ----- | ------- | -------------------------------- |
+| years | `Array` | Array of year objects to import. |
+#### Returns
+| Type     | Description                                       |
+| -------- | ------------------------------------------------- |
+| `Object` | The updated planner instance with imported years. |
+
+---
+
+### FetchAvailablePlanner
+Fetches available intakes for the planner's major, course intake, and intake semester type.
+
+```js
+async FetchAvailablePlanner()
+```
+
+#### Description
+- Calls `MasterStudyPlannerDB.GetAvailableIntakes` with the planner's major ID, course intake ID, and intake semester type.
+- Returns the result of the fetch.
+#### Returns
+| Type     | Description                                |
+| -------- | ------------------------------------------ |
+| `Object` | The result of the available intakes fetch. |
+
+---
+
+### RemoveAllPlannerData
+
+Removes all years, semesters, and units from the planner, resetting it to an empty state.
+
+```js
+RemoveAllPlannerData()
+```
+
+#### Description
+- Removes all the data inside the planner (except for the first semester object).
+- Returns the cleaned planner instance.
+#### Returns
+| Type     | Description                                 |
+| -------- | ------------------------------------------- |
+| `Object` | The planner instance with all data removed. |
+
+---
 ### async SaveToDB
 Saves the current planner state to the database, including semesters and units.
 ```js
@@ -674,18 +769,6 @@ async SaveToDB()
 | Object | `{ success, message }` result of the save operation. |
 
 ---
-## Helper Functions
-These are defined outside the class and used for utility logic:
-- `FetchMasterPlannerContext(master_study_planner_id)`
-- `BuildYearsFromData({...})`
-- `CheckMinCP(years, req, targetYear, targetSemIndex, master_mode)`
-- `CheckPrerequisite(years, req, targetYear, targetSemIndex, master_mode)`
-- `CheckCorequisite(years, req, targetYear, targetSemIndex, master_mode)`
-- `CheckAntirequisite(years, req, targetYear, targetSemIndex, master_mode)`
-- `DetermineNextIntake(last_intake_month, last_intake_year, semType)`
-- `FindLastSemesterFromPreviousYears(startYear, years)`
-
----
 ## Example Usage
 
 ```js
@@ -695,7 +778,7 @@ const planner = new StudyPlanner();
 await planner.Init(master_study_planner_id);
 planner.AddNewYear();
 planner.AddNewSemester(2, "Long Semester");
-planner.SaveToDB();
+await planner.SaveToDB();
 ```
 
 ---
