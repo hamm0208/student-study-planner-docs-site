@@ -13,14 +13,14 @@ Setting up and installing the system
     - Git clone the repo
 4. **[PostgreSQL](https://www.postgresql.org/?utm_source=chatgpt.com)** (via Supabase)
     - Database engine used for storing all application data.
-5. Supabase Cloud Project Database 
+5. **[Supabase Cloud Project Database](https://supabase.com/docs/guides/getting-started)** OR **[Local Database](https://supabase.com/docs/guides/self-hosting/docker)**
 	1. Create your own empty database
 	2. Obtain these values (Click the "connect" button)
 		1. Docs: [Connecting to Supabase](https://supabase.com/docs/guides/database/connecting-to-postgres) 
 			1. **Database URL**
 			2. **Direct URL**
 		2. Docs: [Understanding API Keys](https://supabase.com/docs/guides/api/api-keys)
-			1. **Project** URL (OPTIONAL)
+			1. **Project URL** (OPTIONAL)
 			2. **Anon Key** (OPTIONAL)
 6. Microsoft Entra ID (Azure) TODO:Isaac help me do this part
 7. Obtain these values a Gmail Account with [App Password](https://support.google.com/accounts/answer/185833?hl=en)

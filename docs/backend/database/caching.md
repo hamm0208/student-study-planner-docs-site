@@ -35,7 +35,7 @@ This document describes the client-side caching implementation used in the proje
     - Shows a Swal warning, clears all cache, and calls logout flow (via MSAL).
     - Cache cleared via `DataCacher.ClearAllCache()`.
 
-## API (quick reference)
+## Functions (quick reference)
 
 - DataCacher
   - async GetCache(url) -> data | null
