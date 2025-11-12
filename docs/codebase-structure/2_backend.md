@@ -25,9 +25,11 @@ src/app/api/
 	- Typically, there are two files per entity:  
 	    - `<Entity>.js` → Defines the object model and its properties.  
 	    - `<Entity>DB.js` → Provides methods to communicate with the **RESTful API** for CRUD operations.  
+	- **Jest test files** (e.g., `RoleDB.test.js`) are stored **in the same folder as their corresponding class files** to maintain modularity and make testing easier to manage.
 ```
 src/app/class/
 ├── Unit/
 ├───────Unit.js     #Unit object
 ├───────UnitDB.js   #UnitDB object to communicate with the RESTful API
+├───────UnitDB.test.js   #Jest test file for UnitDB class
 ```
