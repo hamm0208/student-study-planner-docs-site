@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-## System Goal
+# System Goal
 
 The Student Study Planner is designed to **streamline the course planning process** primarily for Head of Departments(HODs) in respective faculties. It replaces the static, document-based planner with an interactive, adaptable system that:
 

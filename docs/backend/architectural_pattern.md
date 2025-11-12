@@ -3,7 +3,10 @@ sidebar_position: 1
 ---
 # Architectural Pattern
 
-### Architectural Pattern: Model-View-Controller (MVC)
+## Architecture Diagram
+
+
+## Architectural Pattern: Model-View-Controller (MVC)
 
 The Student Study Planner backend is structured following the **Model-View-Controller (MVC)** architectural pattern. This design ensures a clear separation of concerns, which makes the codebase highly maintainable, scalable, and easy to test.
 
