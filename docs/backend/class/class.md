@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # General Class Structure 
 
 This document provides a comprehensive guide to understanding how classes are structured, what they contain, and how they are implemented in the Student Study Planner System.
