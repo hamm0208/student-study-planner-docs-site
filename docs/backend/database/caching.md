@@ -1,7 +1,6 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
-
 # Local Caching
 This document describes the client-side caching implementation used in the project, how it works, how to use it, and important caveats.
 
