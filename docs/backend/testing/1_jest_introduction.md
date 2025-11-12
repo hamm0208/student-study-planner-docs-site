@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 ---
+# Jest Introduction
 #### **Overview**
 
 Automated testing was implemented using **Jest**, a JavaScript testing framework integrated with the Node.js environment. Jest was chosen for its simplicity, ES module support, and efficient mock handling, which allowed the system to test backend logic independently from external data sources such as APIs and databases on top of it being in the required tech stack.

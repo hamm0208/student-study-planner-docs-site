@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 ---
+# Test Coverage
 The Jest testing covered:
 
 1. **Unit Testing:** Verifying the functionality of individual modules and methods.
