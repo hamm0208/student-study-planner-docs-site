@@ -10,7 +10,6 @@ The Jest testing covered:
 3. **System Evaluation:** Testing logical flows and combined module behavior.
     
 4. **Acceptance Validation:** Confirming outcomes aligned with user requirements and expected workflows.
-    
 
 #### **Issues and Fixes**
 
@@ -25,4 +24,3 @@ Throughout testing, several configuration and logic-related issues were identifi
 - **Logic bugs:** Fixed non-boolean return values in `Permission.js` methods using double negation (`!!`).
     
 - **Dependency corruption:** Reinstalled `node_modules` after regenerating `package-lock.json` to restore missing dependencies.
-    
