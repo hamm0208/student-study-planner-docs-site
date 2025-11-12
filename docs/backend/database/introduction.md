@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 # Introduction
