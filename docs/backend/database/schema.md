@@ -2,13 +2,11 @@
 sidebar_position: 2
 ---
 
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+
 # ERD Diagram & Business Rule
 
 ## ERD Diagram
-
-
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-
 
 <TransformWrapper
   defaultScale={1}

@@ -1,9 +1,28 @@
 ---
 sidebar_position: 1
 ---
+
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+
 # Architectural Pattern
 
 ## Architecture Diagram
+<TransformWrapper
+  defaultScale={1}
+  defaultPositionX={0}
+  defaultPositionY={0}
+  wheel={{ step: 0.1 }}
+  doubleClick={{ disabled: true }}
+>
+  <TransformComponent>
+    <img
+      src="/img/architecture_diagram.png"
+      alt="Architecture Diagram*"
+      style={{ width: "100%", height: "", display: "block"}}
+    />
+  </TransformComponent>
+</TransformWrapper>
+(Scroll to Zoom, Pinch to Move Around)
 
 
 ## Architectural Pattern: Model-View-Controller (MVC)

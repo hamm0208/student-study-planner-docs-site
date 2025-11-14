@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
 ---
-
 # General Class Structure 
 
 This document provides a comprehensive guide to understanding how classes are structured, what they contain, and how they are implemented in the Student Study Planner System.
@@ -20,7 +19,10 @@ This document provides a comprehensive guide to understanding how classes are st
 8. [Example Class Walkthrough](#example-class-walkthrough)
 
 ---
-
+## Class Directory
+```directory
+src/app/class/
+```
 ## Class Architecture Overview
 
 Classes in the Student Study Planner System are organized within the `src/app/class/` directory. Each class represents a domain entity within the application, such as:
@@ -42,6 +44,8 @@ Classes serve as:
 - **Type Safety**: Provide structure for JavaScript objects
 
 ---
+
+
 
 ## Class Components
 
