@@ -1,10 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
-# ERD Diagram & Business Rule
+# ERD Diagram
 
 ## ERD Diagram
 
@@ -24,5 +24,3 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
   </TransformComponent>
 </TransformWrapper>
 (Scroll to Zoom, Pinch to Move Around)
-
-## Business Rule
