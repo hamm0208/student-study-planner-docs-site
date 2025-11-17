@@ -4,7 +4,11 @@ sidebar_position: 2
 
 # Business Rules
 
-Business rules define the constraints, validations, and logical requirements that govern how the Student Study Planner application operates. These rules ensure data integrity, maintain consistency, and enforce domain logic across the system.
+Business rules define the constraints, validations, and logical requirements that govern how the Academic Study Planner application operates. These rules ensure data integrity, maintain consistency, and enforce domain logic across the system.
+
+:::info
+These rules apply to core operations. Additional domain-specific rules may exist in the API layer and should be enforced at both database and application levels.
+:::
 
 ---
 

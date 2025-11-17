@@ -80,15 +80,15 @@ The application uses the following primary entities:
 
 | Model | Purpose |
 |-------|---------|
-| `User` | User accounts and authentication |
-| `Student` | Student profile information |
-| `Study Plan` | Study plans created by students |
-| `Study Session` | Individual study sessions and progress |
-| `Subject` | Subjects/courses |
-| `Task` | Study tasks and assignments |
+| `users` | User accounts with email and authentication credentials |
+| `UserProfile` | Extended user information and group access management |
+| `Student` | Student enrollment records linked to courses and majors |
+| `Course` | Degree programs and courses offered |
+| `Unit` | Individual academic units/subjects with prerequisites |
+| `MasterStudyPlanner` | Overall study plans for specific course intakes |
 
 :::note
-For detailed schema information, refer to [Schema Documentation](./schema)
+For detailed schema information and all 18 database tables, refer to [Schema Documentation](./schema)
 :::
 
 ---
