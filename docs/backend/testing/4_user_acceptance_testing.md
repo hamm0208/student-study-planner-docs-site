@@ -41,3 +41,49 @@ Participants are assigned their own user role to be used for testing the differe
 | 3              | Super Admin        | Lecturer           | Laptop      |
 | 4              | Super Admin        | Head of Department | Laptop      |
 | 5              | Super Admin        | Head of Department | Laptop      |
+
+### Feedback
+
+#### Positive Feedback
+
+| Feature                  | Comment                                                    |
+| ------------------------ | ---------------------------------------------------------- |
+| Study Plan Overview      | Users appreciated the clear overview.                      |
+| Amendment History        | The log was found to be very useful.                       |
+| Auto-conflict Resolution | This feature was highlighted as a major time-saver.        |
+| Conflict Listing         | Clear listing of conflicts was praised.                    |
+| Flexibility              | Users liked the ability to easily change and modify units. |
+
+#### Areas for Improvement
+
+| Module                   | Issue                                     | Suggestion                                        |
+| ------------------------ | ----------------------------------------- | ------------------------------------------------- |
+| Unit                     | Multiple unit versions may confuse users. | Add a log or last modified date/time.             |
+| Unit Type                | "Save Changes" button is hidden.          | Enable Enter key shortcut or save.                |
+| Term                     | Unsure of required input format.          | Add placeholder text for guidance.                |
+| Course Intake            | Clunky workflow for new intakes.          | Go directly to the study planner after creation.  |
+| Master Study Planner     | Hard to find conflicting units.           | Add a "Conflict" tab or a "Next Conflict" button. |
+|                          | Excessive scrolling to reach buttons.     | Add a sticky toolbar.                             |
+|                          | Unit swapping is inconvenient.            | Implement drag-and-drop functionality.            |
+|                          | Credit points could be more informative.  | Show total credit points for each unit type.      |
+| Student                  | Users see students outside their scope.   | Restrict student visibility by faculty/section.   |
+| Student Information      | Lack of conversation logs for HODs.       | Add a communication log.                          |
+| Personal Study Planner   | Email to student lacks customisation.     | Add a field for custom messages.                  |
+|                          | Can only email one recipient.             | Allow multiple recipients.                        |
+|                          | Unit swapping is inconvenient.            | Implement drag-and-drop functionality.            |
+| User                     | Hard-deleting users removes audit logs.   | Change user status to "Inactive" instead.         |
+| Audit Logs               | Filter input is unclear.                  | Add a border to the input field.                  |
+| Overall System (UI/UX)   | Inconsistent layout, overwhelming colors. | -                                                 |
+| Overall System (Perf)    | Slow database connection.                 | -                                                 |
+| Overall System (General) | Lack of keyboard shortcuts.               | Add common shortcuts (e.g., Ctrl+Z).              |
+The suggestions provided have been carefully reviewed, and a majority have been promptly resolved. Certain items, particularly those related to subjective UI/UX preferences, require further discussion. The following points have been earmarked for future consideration:
+
+| Module                   | Issue                                     | Suggestion                             |
+| ------------------------ | ----------------------------------------- | -------------------------------------- |
+| Unit                     | Multiple unit versions may confuse users. | Add a log or last modified date/time.  |
+| Master Study Planner     | Excessive scrolling to reach buttons.     | Add a sticky toolbar.                  |
+| Master Study Planner     | Unit swapping is inconvenient.            | Implement drag-and-drop functionality. |
+| Student Information      | Lack of conversation logs for HODs.       | Add a communication log.               |
+| Personal Study Planner   | Email to student lacks customisation.     | Add a field for custom messages.       |
+| Personal Study Planner   | Unit swapping is inconvenient.            | Implement drag-and-drop functionality. |
+| Overall System (General) | Lack of keyboard shortcuts.               | Add common shortcuts (e.g., Ctrl+Z).   |
