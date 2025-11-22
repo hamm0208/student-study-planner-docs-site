@@ -33,8 +33,8 @@ Setting up and installing the system
 Run the commands below in your terminal in your desired file location
 ```cmd title="Terminal"
 # GitHub Repository
-git clone https://github.com/hamm0208/student-study-planner-system
-cd student-study-planner-system
+git clone https://github.com/hamm0208/student_study_planner
+cd student_study_planner
 
 # Install Dependencies
 npm install 
