@@ -83,7 +83,7 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/hamm0208/student-study-planner-system',
+            href: 'https://github.com/hamm0208/student_study_planner',
             label: 'GitHub',
             position: 'right',
           },
