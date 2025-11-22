@@ -46,7 +46,7 @@ npx supabase start
 npx prisma db push
 
 #Generate Prisma Client
-npx prisma generate
+npx prisma generate`
 ```
 ---
 ## Setup Environment Variables
@@ -98,8 +98,53 @@ NEXT_PUBLIC_ANON_KEY = <your-anon-key>
 NEXT_PUBLIC_SUPABASE_STORAGE_NAME = "students-study-planners"
 
 ```
+
+:::tip
+- Replace placeholders with your actual values.
+- For production, set `NEXT_PUBLIC_SERVER_URL` to your deployed origin and update MSAL redirect/logout URIs accordingly.
+- `NEXT_PUBLIC_DB_URL` and `NEXT_PUBLIC_ANON_KEY` come from your Supabase project settings.
+- If you run Supabase locally via CLI, ensure `DATABASE_URL` matches the local instance.
+:::
+
+## Database Setup and Seeding
+
+After setting up your `.env` file and running migrations, seed your database:
+
+```bash
+# Complete database setup (migrations + seed)
+npm run db:setup
+
+# Or step by step:
+npx prisma migrate deploy
+npm run db:seed
+```
+
+### Exporting Your Data
+
+After you've inserted all required data into the database:
+
+```bash
+# Export to SQL file (optional)
+npm run db:export
+
+# This creates supabase_dump.sql that you can commit to git (optional)
+git add supabase_dump.sql
+git commit -m "Add database seed data"
+```
+
+### Available Database Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run db:setup` | Complete setup: migrations + seed |
+| `npm run db:export` | Export current database to SQL file |
+| `npm run db:seed` | Import data from SQL file |
+| `npx prisma studio` | Open database GUI |
+
 ---
-## Running the application
-```cmd title="student-study-planner-system"
+
+## Running the Application
+
+```bash
 npm run dev
 ```
