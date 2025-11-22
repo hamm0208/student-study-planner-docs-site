@@ -22,7 +22,9 @@ Setting up and installing the system
 		2. Docs: [Understanding API Keys](https://supabase.com/docs/guides/api/api-keys)
 			1. **Project URL** (OPTIONAL)
 			2. **Anon Key** (OPTIONAL)
-6. Microsoft Entra ID (Azure) TODO:Isaac help me do this part
+6. Microsoft Entra ID (Azure)
+	1. **Application (Client) ID**
+	2. **Directory (Tenant) ID**
 7. Obtain these values a Gmail Account with [App Password](https://support.google.com/accounts/answer/185833?hl=en)
 	1. **Gmail address**
 	2. **App password (16 characters)**
