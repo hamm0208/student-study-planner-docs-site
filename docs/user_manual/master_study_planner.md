@@ -4,10 +4,51 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 :::tip
 
+- For the images, Use scrollwheel to zoom in, and left click to move around
 - Ensure that you are in "Edit Mode" and have the required permission given
 - Adding/Removing a year/semester will automatically adjust the timeline of each of the semester to the next nearest semester depending on semester type
 
 :::
+
+:::warning
+To prevent data loss, ensure that you click:
+
+"Save Changes" for saving the draft
+
+OR
+
+"Save Planner" for saving a completed planner
+
+
+:::
+
+:::note
+
+Rule:
+- In each of the Year within a planner, must **NOT** have more than 2 long semester **AND** 2 short semester
+:::
+
+## Planner Information
+Within the planner information tab, it contains these details:
+
+| Section          | Description                                                             |
+|-----------------|-------------------------------------------------------------------------|
+| Last Modified     | Last Modified by who |
+| Course Details     | The course information (`Status`, `Credits`, `Total Years`, `Total Semesters`) |
+| Unit Types       | All the unit type and their credit points.       |
+<TransformWrapper
+  defaultScale={1}
+  defaultPositionX={0}
+  defaultPositionY={0}
+  wheel={{ step: 0.1 }}
+  doubleClick={{ disabled: true }}
+>
+  <TransformComponent>
+    <img src="/img/msp_planner_info.png" alt="Add Year"vwidth="100%" />
+  </TransformComponent>
+</TransformWrapper>
+
+---
 
 ## Year
 
@@ -175,6 +216,8 @@ Import Planner is only available when the following conditions are met:
   allowFullScreen
 />
 
+---
+
 ## Save as PDF
 Click on the `Save as PDF` button, to export a PDF file
 
@@ -190,3 +233,4 @@ Example of the PDF:
     <img src="/img/msp_export_pdf.png" alt="Add Year"vwidth="100%" />
   </TransformComponent>
 </TransformWrapper>
+
