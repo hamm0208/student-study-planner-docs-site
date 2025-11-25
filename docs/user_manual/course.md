@@ -35,7 +35,44 @@ You can filter courses using:
 
 All CRUD operations (Add, Edit, Delete) follow the same steps as shown in the [General](./general.md) page. The only difference is the information fields specific to courses (Code, Name, Credits Required).
 
+### Add Course
+
+<TransformWrapper
+  defaultScale={1}
+  defaultPositionX={0}
+  defaultPositionY={0}
+  wheel={{ step: 0.1 }}
+  doubleClick={{ disabled: true }}
+>
+  <TransformComponent>
+    <img src="/img/addcourse.png" alt="Add Course Dialog"vwidth="100%" />
+  </TransformComponent>
+</TransformWrapper>
+
+---
+
+## Managing Majors in a Course
+
+To add, edit, or delete majors for a course, you need to edit the course first. Click the "Edit" button on the course row to open the course editor. In the editor, you'll see a "Majors" section where you can:
+
+1. **Add Major** - Enter a major name in the text field and click the "Add" button to add it to the course
+2. **Remove Major** - Click the "X" button next to a major to remove it from the course
+
+Each major added to a course can then be assigned specific intakes (start dates) and study planner timetables through the Intake page.
+
+<TransformWrapper
+  defaultScale={1}
+  defaultPositionX={0}
+  defaultPositionY={0}
+  wheel={{ step: 0.1 }}
+  doubleClick={{ disabled: true }}
+>
+  <TransformComponent>
+    <img src="/img/addmajor.png" alt="Edit Course with Majors Management"vwidth="100%" />
+  </TransformComponent>
+</TransformWrapper>
+
 :::note
-When you add or edit a course, you're managing the course itself. Individual majors within a course are managed separately through the course's detail page by expanding the course row.
+When you add majors to a course through the Edit Course dialog, you're associating these specializations with the course. Each major can then have multiple intakes with different start dates and their own study planner timetables.
 :::
 
