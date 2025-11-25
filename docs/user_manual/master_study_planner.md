@@ -126,6 +126,8 @@ After clicking on the desired Unit Type, the unit row's colour will change
   </TransformComponent>
 </TransformWrapper>
 
+---
+
 ## Import from Planners
 Importing other planners data onto the current planner
 :::note
@@ -155,6 +157,36 @@ Import Planner is only available when the following conditions are met:
   allowFullScreen
 />
 
-## Conflict Resolution
+---
 
-### Next Conflict Button
+## Conflict Resolution
+:::note
+
+1. Next Conflict Button
+  - Lead the user to the next conflicting unit in the planner
+:::
+<iframe
+  width="100%"
+  height="450"
+  src="https://www.youtube.com/embed/rbyNTug3bCM"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
+
+## Save as PDF
+Click on the `Save as PDF` button, to export a PDF file
+
+Example of the PDF:
+<TransformWrapper
+  defaultScale={1}
+  defaultPositionX={0}
+  defaultPositionY={0}
+  wheel={{ step: 0.1 }}
+  doubleClick={{ disabled: true }}
+>
+  <TransformComponent>
+    <img src="/img/msp_export_pdf.png" alt="Add Year"vwidth="100%" />
+  </TransformComponent>
+</TransformWrapper>
