@@ -38,3 +38,16 @@ This is the documentation repository for Student Study Planner, a final year pro
         * [Test Coverage](backend/testing/test_coverage)
 4.  **Future Development**
     1.  [Recommendation Feature](recommended_feature)
+
+5. **User Manual**
+    * [Audit Logs](user_manual/audit_logs.md)
+    * [Course](user_manual/course.md)
+    * [General](user_manual/general.md)
+    * [Intake](user_manual/Intake.md)
+    * [Master Study Planner](user_manual/master_study_planner.md)
+    * [Personal Study Planner](user_manual/personal_study_planner.md)
+    * [Roles](user_manual/roles.md)
+    * [Student](user_manual/student.md)
+    * [Terms](user_manual/terms.md)
+    * [Unit Type](user_manual/unit_type.md)
+    * [User Management](user_manual/user_management.md)
