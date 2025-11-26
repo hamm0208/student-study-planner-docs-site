@@ -29,7 +29,6 @@ This is the documentation repository for Student Study Planner, a final year pro
         * [StudentStudyPlanner](backend/class/student_study_planner)
     5.  **Database**
         * [Introduction](backend/database/introduction)
-        * [Business Rule](backend/database/business_rule)
         * [ERD Diagram](backend/database/schema)
         * [Local Caching](backend/database/caching)
         * [Useful Commands](backend/database/useful_commands)
