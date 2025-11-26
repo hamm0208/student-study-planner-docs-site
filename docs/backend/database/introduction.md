@@ -181,7 +181,6 @@ npx prisma db pull
 ## Related Documentation
 
 - [Schema Details](./schema) – Detailed database schema and relationships
-- [Business Rules](./business_rule) – Business logic and constraints
 - [Caching Strategy](./caching) – Caching implementation and best practices
 - [Useful Commands](./useful_commands) – Database operation commands
 
