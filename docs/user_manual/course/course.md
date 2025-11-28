@@ -3,7 +3,7 @@
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 ## Overview
-The Course page displays all courses in the system along with their associated majors. Currently, there is only one course—Bachelor of Computer Science (BA-CS)—which contains multiple majors such as Cybersecurity, Data Science, Artificial Intelligence, Internet of Things, and Software Development. Each course displays the number of majors, credits required, and allows you to add, edit, and delete courses. For detailed CRUD instructions, see the [General](./general.md) page as the same steps apply here.
+The Course page displays all courses in the system along with their associated majors. Currently, there is only one course—Bachelor of Computer Science (BA-CS)—which contains multiple majors such as Cybersecurity, Data Science, Artificial Intelligence, Internet of Things, and Software Development. Each course displays the number of majors, credits required, and allows you to add, edit, and delete courses. For detailed CRUD instructions, see the [General](../general.md) page as the same steps apply here.
 
 :::note
 **Current Structure**: The system currently has one course (BA-CS) with 5 majors. Each major represents a specialization within this course and can have its own intake schedule and timetable.
@@ -33,7 +33,7 @@ You can filter courses using:
 
 ## CRUD Operations
 
-All CRUD operations (Add, Edit, Delete) follow the same steps as shown in the [General](./general.md) page. The only difference is the information fields specific to courses (Code, Name, Credits Required).
+All CRUD operations (Add, Edit, Delete) follow the same steps as shown in the [General](../general.md) page. The only difference is the information fields specific to courses (Code, Name, Credits Required).
 
 ### Add Course
 

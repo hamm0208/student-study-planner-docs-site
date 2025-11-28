@@ -7,7 +7,7 @@ sidebar_position : 1
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 ## Overview
-The Student page displays all students in the system with their information such as Student ID, Name, Course, Major, and Term Intake. You can filter, search, add, edit, and delete students from this page. For detailed CRUD instructions, see the [General](./general.md) page as the same steps apply here.
+The Student page displays all students in the system with their information such as Student ID, Name, Course, Major, and Term Intake. You can filter, search, add, edit, and delete students from this page. For detailed CRUD instructions, see the [General](../general.md) page as the same steps apply here.
 
 ## Filtering and Search
 You can filter students using multiple options:
@@ -33,7 +33,7 @@ You can filter students using multiple options:
 
 ## CRUD Operations
 
-All CRUD operations (Add, Edit, Delete) follow the same steps as shown in the [General](./general.md) page. The only difference is the information fields specific to students (Student ID, Name, Course, Major, Term Intake, Status).
+All CRUD operations (Add, Edit, Delete) follow the same steps as shown in the [General](../general.md) page. The only difference is the information fields specific to students (Student ID, Name, Course, Major, Term Intake, Status).
 
 ## Student Details
 To view the student details (personal study planner, unit history), click on the "Eye" icon
