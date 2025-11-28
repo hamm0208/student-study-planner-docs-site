@@ -7,7 +7,7 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 - For the images, Use scrollwheel to zoom in, and left click to move around
 - Ensure that you are in "Edit Mode" and have the required permission given
 - The Personal Study Planner builds on the Master Study Planner, thus have the same basic features
-	- Refer to Master [Study Planner manual](master_study_planner) for the basic features
+	- Refer to Master [Study Planner manual](../course/master_study_planner) for the basic features
 :::
 
 :::warning

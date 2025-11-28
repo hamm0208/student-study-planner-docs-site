@@ -46,7 +46,7 @@ This is the documentation repository for Student Study Planner, a final year pro
     * [Course](category/course)
         * [Intake](user_manual/course/intake)
         * [Master Study Planner](user_manual/course/master_study_planner.md)
-    * [Student](user_manual/student.md)
+    * [Student](user_manual/student)
         * [Personal Study Planner](user_manual/student/personal_study_planner.md)
     * [Roles](user_manual/roles.md)
     * [User Management](user_manual/user_management.md)
