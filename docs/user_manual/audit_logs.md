@@ -1,3 +1,7 @@
+---
+sidebar_position: 8
+---
+
 # Audit Logs
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";

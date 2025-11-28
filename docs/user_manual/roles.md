@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Roles
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";

@@ -1,3 +1,7 @@
+---
+sidebar_position : 1
+---
+
 # Student
 
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
@@ -30,6 +34,23 @@ You can filter students using multiple options:
 ## CRUD Operations
 
 All CRUD operations (Add, Edit, Delete) follow the same steps as shown in the [General](./general.md) page. The only difference is the information fields specific to students (Student ID, Name, Course, Major, Term Intake, Status).
+
+## Student Details
+To view the student details (personal study planner, unit history), click on the "Eye" icon
+
+### Import Unit History
+Proceed to [Swinburne's Portal](https://sisportal-100380.campusnexus.cloud/CMCPortal/secure/Student/Reg/OnlineRegStep1.aspx?sm=7) to obtain a student's unit history
+
+<iframe
+  width="100%"
+  height="450"
+  src="https://www.youtube.com/embed/ZX5U3SgJ4ng"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+/>
+
 
 ## Student ID Search (Student Personal Study Planner)
 By entering the student's id on the search bar, you are able to access any student's personal study planner with ease. Just enter student id in the box and press the "Search Student" button
