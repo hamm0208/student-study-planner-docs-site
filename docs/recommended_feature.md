@@ -80,3 +80,6 @@ We will refactor the core Study Planner data structure from a multi-dimensional 
 ### Scalability Strategy
 * **Database Infrastructure:** Scale the backend to process university-wide datasets without latency.
 * **User Focus Shift:** Strategically pivot the primary user focus from HoDs to **Students**, empowering them with self-management tools to reduce administrative overhead.
+
+## 5. Tech Debt
+The current auto solver (SolveConflicts) is a greedy algorithm which is not optimal for finding the best study planner, potentially optimise through **Integer Programming**, or changing the `years` structure within `StudentStudyPlanner` to a graph instead of a multidimensional array and take a look into **Graph Colouring** as a algorithm.
